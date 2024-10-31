@@ -1,0 +1,46 @@
+2024-10-30 13:59:38,716 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 13:59:38,897 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-30 13:59:38,897 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-30 13:59:38,899 - INFO -  * Restarting with stat
+2024-10-30 13:59:39,136 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 13:59:39,168 - WARNING -  * Debugger is active!
+2024-10-30 13:59:40,389 - INFO -  * Debugger PIN: 109-798-075
+2024-10-30 21:01:01,202 - INFO - 127.0.0.1 - - [30/Oct/2024 21:01:01] "GET /api/video/z3YMz-Gocmw HTTP/1.1" 200 -
+2024-10-30 21:01:01,613 - ERROR - Error fetching comments: cannot access local variable 'request' where it is not associated with a value
+2024-10-30 21:01:01,614 - INFO - 127.0.0.1 - - [30/Oct/2024 21:01:01] "[35m[1mGET /api/comments/z3YMz-Gocmw HTTP/1.1[0m" 500 -
+2024-10-30 21:38:04,516 - INFO -  * Detected change in '/home/omokehinde/Documents/FlaskProjects/youtube-data-backend/services/youtube_service.py', reloading
+2024-10-30 21:38:23,048 - INFO -  * Restarting with stat
+2024-10-30 21:38:49,912 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 21:38:50,831 - WARNING -  * Debugger is active!
+2024-10-30 21:38:51,650 - INFO -  * Debugger PIN: 109-798-075
+2024-10-30 23:26:52,984 - INFO -  * Detected change in '/home/omokehinde/Documents/FlaskProjects/youtube-data-backend/app.py', reloading
+2024-10-30 23:26:53,081 - INFO -  * Restarting with stat
+2024-10-30 23:29:30,184 - INFO - [googleapiclient.discovery_cache] - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 23:29:33,232 - WARNING - [google.auth.compute_engine._metadata] - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2024-10-30 23:29:37,185 - WARNING - [google.auth.compute_engine._metadata] - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2024-10-30 23:29:42,223 - WARNING - [google.auth.compute_engine._metadata] - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2024-10-30 23:29:42,223 - WARNING - [google.auth._default] - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2024-10-30 23:31:03,540 - INFO - [googleapiclient.discovery_cache] - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 23:31:03,551 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-30 23:31:03,551 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2024-10-30 23:31:58,077 - INFO - [werkzeug] - 127.0.0.1 - - [30/Oct/2024 23:31:58] "GET /api/video/z3YMz-Gocmw HTTP/1.1" 200 -
+2024-10-30 23:31:58,497 - INFO - [werkzeug] - 127.0.0.1 - - [30/Oct/2024 23:31:58] "GET /api/comments/z3YMz-Gocmw HTTP/1.1" 200 -
+2024-10-30 23:33:41,607 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 23:33:41,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-30 23:33:41,645 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-30 23:33:41,646 - INFO -  * Restarting with stat
+2024-10-30 23:33:41,876 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 23:33:41,908 - WARNING -  * Debugger is active!
+2024-10-30 23:33:41,910 - INFO -  * Debugger PIN: 180-457-798
+2024-10-30 23:33:58,537 - INFO - 127.0.0.1 - - [30/Oct/2024 23:33:58] "GET /api/video/z3YMz-Gocmw HTTP/1.1" 200 -
+2024-10-30 23:33:58,546 - ERROR - Error fetching comments: cannot access local variable 'request' where it is not associated with a value
+2024-10-30 23:33:58,546 - INFO - 127.0.0.1 - - [30/Oct/2024 23:33:58] "[35m[1mGET /api/comments/z3YMz-Gocmw HTTP/1.1[0m" 500 -
+2024-10-30 23:34:27,821 - INFO - [googleapiclient.discovery_cache] - file_cache is only supported with oauth2client<4.0.0
+2024-10-30 23:34:27,831 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-30 23:34:27,831 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2024-10-30 23:37:17,779 - INFO - [werkzeug] - 127.0.0.1 - - [30/Oct/2024 23:37:17] "GET /api/video/z3YMz-Gocmw HTTP/1.1" 200 -
+2024-10-30 23:37:17,798 - INFO - [werkzeug] - 127.0.0.1 - - [30/Oct/2024 23:37:17] "GET /api/comments/z3YMz-Gocmw HTTP/1.1" 200 -
