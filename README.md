@@ -8,7 +8,13 @@ To install and run this application locally:
 4. run `source .venv/bin/activate` if you are on linux or mac, `source .venv/Scripts/activate` if you are on windows
 5. run `pip install -r requirements.txt`
 6. create a .env and put the YOUTUBE_API_KEY=your_youtube_api_key
-7. run `python app.y`
+7. run `pip install -e .`
+8. run `python -m src.youtube_api.app`
+
+To run Test:
+1. run `pip install -e ".[dev]"`
+2. run `pytest` to run the tests
+3. run `pytest --cov=youtube_api --cov-report=term-missing` to run test with coverage
 
 If you have any questions you can reach out to me via email or whatsapp. Happy codding. 
 

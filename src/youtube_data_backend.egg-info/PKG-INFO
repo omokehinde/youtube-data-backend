@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: youtube-data-backend
+Version: 0.1.0
+Requires-Dist: google-api-python-client
+Requires-Dist: cachetools
+Requires-Dist: prometheus-client
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"

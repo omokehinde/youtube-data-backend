@@ -1,0 +1,10 @@
+google-api-python-client
+cachetools
+prometheus-client
+flask
+flask-cors
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov

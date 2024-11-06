@@ -16,6 +16,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Custom exception classes
+class YouTubeAPIError(Exception):
+    """Base exception class for YouTube API errors"""
+    pass
+
+class QuotaExceededError(YouTubeAPIError):
+    """Raised when the YouTube API quota has been exceeded"""
+    pass
+
 @dataclass
 class VideoDetails:
     title: str
@@ -38,10 +47,16 @@ class CommentsResponse:
     total_results: int
 
 class YouTubeService:
-    def __init__(self):
-        self.api_key = os.getenv("YOUTUBE_API_KEY")
+    def __init__(self, api_key: Optional[str] = None):
+        """
+        Initialize the YouTube service with an API key.
+        
+        Args:
+            api_key: Optional API key. If not provided, will try to read from YOUTUBE_API_KEY environment variable.
+        """
+        self.api_key = api_key or os.getenv("YOUTUBE_API_KEY")
         if not self.api_key:
-            raise ValueError("YouTube API key not found in environment variables")
+            raise ValueError("YouTube API key not provided and not found in environment variables")
             
         self.youtube = build(
             "youtube", "v3", 
@@ -96,9 +111,9 @@ class YouTubeService:
             
         except HttpError as e:
             logger.error(f"YouTube API error for video {video_id}: {str(e)}")
-            if e.resp.status == 403:
-                raise Exception("API quota exceeded")
-            raise
+            if e.resp.status == 403 and 'quota' in str(e).lower():
+                raise QuotaExceededError("YouTube API quota has been exceeded")
+            raise YouTubeAPIError(f"YouTube API error: {str(e)}")
         except Exception as e:
             logger.error(f"Unexpected error fetching video {video_id}: {str(e)}")
             raise
@@ -151,9 +166,9 @@ class YouTubeService:
             
         except HttpError as e:
             logger.error(f"YouTube API error fetching comments for video {video_id}: {str(e)}")
-            if e.resp.status == 403:
-                raise Exception("API quota exceeded")
-            raise
+            if e.resp.status == 403 and 'quota' in str(e).lower():
+                raise QuotaExceededError("YouTube API quota has been exceeded")
+            raise YouTubeAPIError(f"YouTube API error: {str(e)}")
         except Exception as e:
             logger.error(f"Unexpected error fetching comments for video {video_id}: {str(e)}")
             raise

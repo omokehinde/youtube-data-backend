@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/youtube_api.egg-info/PKG-INFO
+src/youtube_api.egg-info/SOURCES.txt
+src/youtube_api.egg-info/dependency_links.txt
+src/youtube_api.egg-info/requires.txt
+src/youtube_api.egg-info/top_level.txt
+tests/test_youtube_service.py
